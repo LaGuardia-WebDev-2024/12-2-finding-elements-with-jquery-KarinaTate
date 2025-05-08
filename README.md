@@ -1,24 +1,24 @@
-# 12-2-Finding-Elements-with-jQuery
+# 13-2-More-form-processing-with-jQuery
 
 ## Video
 
-[Video](https://youtu.be/KDFtN6C5mO0) <-- Make sure to watch this video first<br>
+[Video](https://youtu.be/DeEAsYwhVdY) <-- Make sure to watch this video first<br>
 
 ## Directions
 
-### Step #1 - Replace the list items <br>
-
-This webpage displays some basic information about horses. You'll use jQuery to replace parts of the page so that it's all about unicorns instead! In this first step, use jQuery to change the text of all of the `<li>`s to **'horn'.**
+### Step #1 - Process the form <br>
+This webpage displays a form for ordering donuts We've already set up the basic form processing handler for you AND added images for a glazed, jelly and boston cream donut.
 <br><br>
-_Hint:_`$("li").text(_)`
+In this step, you're going to change the processing logic to get the value of the selected drop down item, and add a corresponding image to the body.
 <br><br>
-### Step #2 - Replace the headline <br>
-Now use jQuery to replace the main headline, selecting it based on its page-heading id. Change it so that this page is **'All about unicorns'** instead.
+_Hint:_<br> 
+`var $donutType = $(this).find("......"); `<br>
+`var donutType = .....;`<br>
+`var $img = $("...");`<br>
+`$img.width(100);`<br>
+`$img.attr("src", ....);`<br>
+`$img.appendTo("body");`
 <br><br>
-_Hint:_`$(_).text(_)`
-
-### Step #3 - Replace the animal names <br>
-Finally, use jQuery to select all of the `<span>`s that have the class name animal and change their text to say **'unicorns'** instead.
-<br><br>
-_Hint:_`$(_).text(_)`
-
+### Step #2 - Extra - Add a *new* donut type <br>
+_Do this step only if you have extra time_<br><br>
+Add another donut type to the ordering system. 
